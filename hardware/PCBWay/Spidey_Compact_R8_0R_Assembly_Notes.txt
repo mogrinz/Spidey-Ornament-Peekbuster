@@ -1,0 +1,38 @@
+SPIDEY COMPACT - R8 MOTOR-DRIVER WAKE FIX
+REV: R8-0R (replaces prior C1 100k R8 BOM)
+
+MANDATORY ECO / DO NOT MISS:
+  - FIT R8 with one (1) 0-ohm 0603 SMD jumper, Yageo RC0603JR-070RL.
+  - This replaces the original 100k resistor (RC0603FR-07100KL) at R8.
+  - Do not fit 100k, do not leave R8 unpopulated, and do not add a separate
+    hand-solder bridge if a 0-ohm jumper is fitted.
+  - R8 connects SYS to U2 DRV8838 nSLEEP. The original 100k was too weak
+    against the driver's internal pulldown and held nSLEEP too low.
+  - Prototype confirmed: at SYS 3.3V, original nSLEEP 1.2V; after bridging
+    R8, motor works. Verify nSLEEP approximately SYS in powered QA.
+  - If exact 0-ohm 0603 part is unavailable, request customer approval for
+    an equivalent 0-ohm 0603 part; never substitute a 100k resistor.
+
+OTHER ASSEMBLY REQUIREMENTS:
+  - Turnkey PCBA, TOP SIDE components only, 22mm x 20mm PCB.
+  - PCBWay to panelize as needed for assembly, with rails and panel fiducials.
+  - Do not substitute ANY parts without customer approval.
+  - Verify orientation/polarity of D1L, D1H, D2 and C6.
+  - USB connector J1: HRO TYPE-C-31-M-12 / LCSC C165948, SMT contacts and
+    through-hole shell retention tabs.
+  - U2: DRV8838DSGR WSON-8, exposed GND pad; verify stencil/paste treatment.
+  - C8 is DNP (optional motor suppression capacitor).
+  - J2-J7 are PCB solder/test pads only. External BAT, SW, PWR, MOTOR, SPKR,
+    UPDI pads are intentionally UNPOPULATED and require no purchased parts.
+  - BOM specifies 22 FIT components including R8. CPL lists exactly these 22.
+
+PCB BARE-BOARD SETTINGS:
+  22 x 20mm, 2 layers, FR-4, 1.6mm, 1oz, green solder mask,
+  white silkscreen, lead-free HASL. PCBWay panelization allowed.
+
+NOTE ON FABRICATION DATA:
+  The R8 ECO changes ONLY the component value, not the footprint, placement,
+  pad dimensions, copper traces, mask, paste, or board outline. The enclosed
+  Gerbers/drills are byte-for-byte identical to original C1 manufacturing
+  files. The enclosed KiCad board and BOM/CPL are revised for R8 = 0R.
+  Previously supplied KiCad DRC was clean; no new native DRC run performed here.

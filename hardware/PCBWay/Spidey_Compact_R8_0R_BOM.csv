@@ -1,0 +1,30 @@
+Designator,Quantity per board,Value,Manufacturer,Manufacturer Part Number,Footprint,Population,Notes
+J1,1,USB-C POWER,HRO,TYPE-C-31-M-12,Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12,FIT,LCSC C165948; SMT contacts and through-hole shell anchors
+U1,1,ATtiny402,Microchip,ATTINY402-SSNR,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,FIT,
+U2,1,DRV8838,Texas Instruments,DRV8838DSGR,Package_SON:Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm,FIT,
+U3,1,MCP73831,Microchip,MCP73831T-2ACI/OT,Package_TO_SOT_SMD:SOT-23-5,FIT,
+R1,1,5.1k,Yageo,RC0603FR-075K1L,Resistor_SMD:R_0603_1608Metric,FIT,
+R2,1,5.1k,Yageo,RC0603FR-075K1L,Resistor_SMD:R_0603_1608Metric,FIT,
+R3,1,10k,Yageo,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,FIT,
+R4,1,2.2k,Yageo,RC0603FR-072K2L,Resistor_SMD:R_0603_1608Metric,FIT,
+R5,1,100k,Yageo,RC0603FR-07100KL,Resistor_SMD:R_0603_1608Metric,FIT,
+R6,1,100k,Yageo,RC0603FR-07100KL,Resistor_SMD:R_0603_1608Metric,FIT,
+R7,1,10k,Yageo,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,FIT,
+R8,1,0R,Yageo,RC0603JR-070RL,Resistor_SMD:R_0603_1608Metric,FIT,CRITICAL ECO: FIT 0-ohm 0603 jumper; connects SYS to DRV8838 nSLEEP. NEVER populate old 100k; do not DNP. Do not add a separate solder bridge.
+C1,1,4.7uF,Murata,GRM188R61A475KE15D,Capacitor_SMD:C_0603_1608Metric,FIT,
+C2,1,4.7uF,Murata,GRM188R61A475KE15D,Capacitor_SMD:C_0603_1608Metric,FIT,
+C3,1,100nF,Yageo,CC0603KRX7R9BB104,Capacitor_SMD:C_0603_1608Metric,FIT,
+C4,1,100nF,Yageo,CC0603KRX7R9BB104,Capacitor_SMD:C_0603_1608Metric,FIT,
+C5,1,100nF,Yageo,CC0603KRX7R9BB104,Capacitor_SMD:C_0603_1608Metric,FIT,
+C7,1,100nF,Yageo,CC0603KRX7R9BB104,Capacitor_SMD:C_0603_1608Metric,FIT,
+C8,1,100nF,Yageo,CC0603KRX7R9BB104,Capacitor_SMD:C_0603_1608Metric,DNP,Optional motor suppression; NOT populated
+C6,1,47uF 6.3V,KEMET,T520A476M006ATE150,Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A,FIT,Pin1 positive; polymer 47uF 6.3V 150mOhm; confirm sourcing
+D1L,1,BAT54WS,Diodes Inc.,BAT54WS-7-F,Diode_SMD:D_SOD-323,FIT,"K=pin1, A=pin2"
+D1H,1,BAT54WS,Diodes Inc.,BAT54WS-7-F,Diode_SMD:D_SOD-323,FIT,"K=pin1, A=pin2"
+D2,1,CHG GREEN,Lite-On,LTST-C190KGKT,LED_SMD:LED_0603_1608Metric,FIT,Pin1 cathode STAT; pin2 anode LED_A
+J2,1,BAT wire pads,PCB feature,N/A,Wire pads,NO PART,User wires; no purchased connector
+J3,1,MOTOR wire pads,PCB feature,N/A,Wire pads,NO PART,User wires; no purchased connector
+J4,1,PWR wire pads,PCB feature,N/A,Wire pads,NO PART,User wires; no purchased connector
+J5,1,SW wire pads,PCB feature,N/A,Wire pads,NO PART,User wires; no purchased connector
+J6,1,SPKR wire pad,PCB feature,N/A,Wire pads,NO PART,User wires; no purchased connector
+J7,1,UPDI SYS GND pogo pads,PCB feature,N/A,Back pogo pads,NO PART,"U=UPDI, +=SYS, -=GND"

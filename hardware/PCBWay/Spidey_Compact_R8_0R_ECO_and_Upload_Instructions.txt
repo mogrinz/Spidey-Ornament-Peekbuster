@@ -1,0 +1,35 @@
+SPIDEY COMPACT R8-0R | PCBWAY MANUFACTURING HANDOFF
+====================================================
+
+R8 FIX:
+  Original R8 (100k) kept DRV8838 nSLEEP at ~1.2V with SYS at 3.3V.
+  Bridging R8 experimentally restored motor operation.
+  THIS REVISION: assemble R8 with a 0-ohm 0603 SMD jumper,
+  Yageo RC0603JR-070RL, not the old 100k resistor.
+
+UPLOAD TO PCBWAY:
+  1. PCB/Gerber file -> Spidey_Compact_R8_0R_Gerbers.zip
+  2. BOM -> Spidey_Compact_R8_0R_BOM.csv
+  3. CPL/centroid -> Spidey_Compact_R8_0R_CPL.csv
+  4. Assembly instructions -> Spidey_Compact_R8_0R_Assembly_Notes.txt
+  5. If PCBWay requests project source, supply:
+     Spidey_Compact_R8_0R_KiCad_Source.zip
+
+IMPORTANT:
+  Do not upload this master package as though it were Gerbers.
+  Use the dedicated Gerbers ZIP in step 1.
+  Do not reuse the earlier toPCBWay(1).zip BOM or CPL.
+  Explicitly confirm R8 = 0R / 0 ohms in PCBWay's components review.
+  If PCBWay already has an earlier BOM/quote, upload this revised one and
+  require a revised component confirmation before authorizing production.
+
+VALIDATION:
+  - Original KiCad board identical across source and toPCBWay(1) upload.
+  - R8 source PCB value changed: 100k -> 0R, no other PCB characters changed.
+  - BOM R8 changed to 0R / Yageo RC0603JR-070RL (FIT).
+  - CPL R8 value changed to 0R; position, rotation and side preserved.
+  - 22 fitted BOM parts exactly match 22 CPL placements.
+  - All Gerbers, job file, and PTH/NPTH drill files copied byte-for-byte.
+  - Native KiCad 10 DRC was previously 0 for source geometry (original C1).
+  - No native KiCad CLI/DRC rerun in this environment.
+  - PCBWay DFM/stencil/placement checks are still required.
